@@ -9,5 +9,6 @@ namespace Prigione.Models
         public int ViolazioneID { get; set; }
         [Required]
         public string Descrizione { get; set; }
+        public ICollection<VerbaleModel> Verbali { get; set; } = new List<VerbaleModel>();
     }
 }

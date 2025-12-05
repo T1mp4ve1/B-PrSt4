@@ -9,6 +9,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PrigioneDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IViolazioneService, ViolazioneService>();
+builder.Services.AddScoped<ITrasgressoreService, TrasgressoreService>();
 
 var app = builder.Build();
 
