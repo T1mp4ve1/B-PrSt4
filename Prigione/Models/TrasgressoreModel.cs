@@ -25,6 +25,6 @@ namespace Prigione.Models
         [MaxLength(16)]
         public string CF { get; set; }
 
-        public ICollection<VerbaleModel> Verbali { get; set; } = new List<VerbaleModel>();
+        public ICollection<VerbaleModelTest> Verbali { get; set; } = new List<VerbaleModelTest>();
     }
 }

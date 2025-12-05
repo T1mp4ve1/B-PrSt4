@@ -61,17 +61,17 @@ namespace Prigione.Migrations
                     b.ToTable("Trasgressori");
                 });
 
-            modelBuilder.Entity("Prigione.Models.VerbaleModel", b =>
+            modelBuilder.Entity("Prigione.Models.VerbaleModelTest", b =>
                 {
                     b.Property<Guid>("VerbaleID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("DataVerbale")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("DataVerbale")
+                        .HasColumnType("date");
 
-                    b.Property<DateTime>("DataViolazione")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("DataViolazione")
+                        .HasColumnType("date");
 
                     b.Property<int>("DecurtamentoPunti")
                         .HasColumnType("int");
@@ -86,19 +86,16 @@ namespace Prigione.Migrations
                     b.Property<Guid>("TrasgressoreID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("ViolazioneID")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("ViolazioneID1")
+                    b.Property<int>("ViolazioneID")
                         .HasColumnType("int");
 
                     b.HasKey("VerbaleID");
 
                     b.HasIndex("TrasgressoreID");
 
-                    b.HasIndex("ViolazioneID1");
+                    b.HasIndex("ViolazioneID");
 
-                    b.ToTable("Verbali");
+                    b.ToTable("VerbaliTest");
                 });
 
             modelBuilder.Entity("Prigione.Models.ViolazioneModel", b =>
@@ -111,14 +108,15 @@ namespace Prigione.Migrations
 
                     b.Property<string>("Descrizione")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.HasKey("ViolazioneID");
 
                     b.ToTable("Violazioni");
                 });
 
-            modelBuilder.Entity("Prigione.Models.VerbaleModel", b =>
+            modelBuilder.Entity("Prigione.Models.VerbaleModelTest", b =>
                 {
                     b.HasOne("Prigione.Models.TrasgressoreModel", "Trasgressore")
                         .WithMany("Verbali")
@@ -127,8 +125,8 @@ namespace Prigione.Migrations
                         .IsRequired();
 
                     b.HasOne("Prigione.Models.ViolazioneModel", "Violazione")
-                        .WithMany()
-                        .HasForeignKey("ViolazioneID1")
+                        .WithMany("Verbali")
+                        .HasForeignKey("ViolazioneID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -138,6 +136,11 @@ namespace Prigione.Migrations
                 });
 
             modelBuilder.Entity("Prigione.Models.TrasgressoreModel", b =>
+                {
+                    b.Navigation("Verbali");
+                });
+
+            modelBuilder.Entity("Prigione.Models.ViolazioneModel", b =>
                 {
                     b.Navigation("Verbali");
                 });

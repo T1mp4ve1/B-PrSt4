@@ -10,6 +10,6 @@ namespace Prigione.Data
         }
         public DbSet<TrasgressoreModel> Trasgressori { get; set; }
         public DbSet<ViolazioneModel> Violazioni { get; set; }
-        public DbSet<VerbaleModel> Verbali { get; set; }
+        public DbSet<VerbaleModelTest> VerbaliTest { get; set; }
     }
 }

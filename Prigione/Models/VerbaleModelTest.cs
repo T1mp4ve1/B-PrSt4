@@ -1,18 +1,19 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Prigione.Models
 {
-    public class VerbaleModel
+    public class VerbaleModelTest
     {
         [Key]
         [Required]
         public Guid VerbaleID { get; set; }
         [Required]
-        public DateTime DataViolazione { get; set; }
+        public DateOnly DataViolazione { get; set; }
         [Required]
         public string IndirizzoViolazione { get; set; }
         [Required]
-        public DateTime DataVerbale { get; set; }
+        public DateOnly DataVerbale { get; set; }
         [Required]
         public decimal Importo { get; set; }
         [Required]
@@ -21,10 +22,12 @@ namespace Prigione.Models
         //foreign key
         [Required]
         public Guid TrasgressoreID { get; set; }
-        public TrasgressoreModel Trasgressore { get; set; }
+        [ForeignKey("TrasgressoreID")]
+        public TrasgressoreModel? Trasgressore { get; set; }
 
         [Required]
-        public Guid ViolazioneID { get; set; }
-        public ViolazioneModel Violazione { get; set; }
+        public int ViolazioneID { get; set; }
+        [ForeignKey("ViolazioneID")]
+        public ViolazioneModel? Violazione { get; set; }
     }
 }

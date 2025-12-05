@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Prigione.Migrations
 {
     /// <inheritdoc />
-    public partial class fn3fsfs : Migration
+    public partial class adt43stsrt : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -34,7 +34,7 @@ namespace Prigione.Migrations
                 {
                     ViolazioneID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Descrizione = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Descrizione = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -42,52 +42,51 @@ namespace Prigione.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Verbali",
+                name: "VerbaliTest",
                 columns: table => new
                 {
                     VerbaleID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    DataViolazione = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataViolazione = table.Column<DateOnly>(type: "date", nullable: false),
                     IndirizzoViolazione = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DataVerbale = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataVerbale = table.Column<DateOnly>(type: "date", nullable: false),
                     Importo = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     DecurtamentoPunti = table.Column<int>(type: "int", nullable: false),
                     TrasgressoreID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ViolazioneID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ViolazioneID1 = table.Column<int>(type: "int", nullable: false)
+                    ViolazioneID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Verbali", x => x.VerbaleID);
+                    table.PrimaryKey("PK_VerbaliTest", x => x.VerbaleID);
                     table.ForeignKey(
-                        name: "FK_Verbali_Trasgressori_TrasgressoreID",
+                        name: "FK_VerbaliTest_Trasgressori_TrasgressoreID",
                         column: x => x.TrasgressoreID,
                         principalTable: "Trasgressori",
                         principalColumn: "TrasgressoreID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Verbali_Violazioni_ViolazioneID1",
-                        column: x => x.ViolazioneID1,
+                        name: "FK_VerbaliTest_Violazioni_ViolazioneID",
+                        column: x => x.ViolazioneID,
                         principalTable: "Violazioni",
                         principalColumn: "ViolazioneID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Verbali_TrasgressoreID",
-                table: "Verbali",
+                name: "IX_VerbaliTest_TrasgressoreID",
+                table: "VerbaliTest",
                 column: "TrasgressoreID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Verbali_ViolazioneID1",
-                table: "Verbali",
-                column: "ViolazioneID1");
+                name: "IX_VerbaliTest_ViolazioneID",
+                table: "VerbaliTest",
+                column: "ViolazioneID");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Verbali");
+                name: "VerbaliTest");
 
             migrationBuilder.DropTable(
                 name: "Trasgressori");

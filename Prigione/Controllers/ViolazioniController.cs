@@ -22,8 +22,7 @@ namespace Prigione.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            var violazioni = await _service.GetAllAsync();
-            return View("Index", violazioni);
+            return View("Index", violazione);
         }
 
 

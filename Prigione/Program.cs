@@ -10,6 +10,7 @@ builder.Services.AddDbContext<PrigioneDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IViolazioneService, ViolazioneService>();
 builder.Services.AddScoped<ITrasgressoreService, TrasgressoreService>();
+builder.Services.AddScoped<IVerbaleModelTestService, VerbaleModelTestService>();
 
 var app = builder.Build();
 
