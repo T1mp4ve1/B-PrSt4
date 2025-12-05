@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using Prigione.Data;
+using Prigione.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<PrigioneDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IViolazioneService, ViolazioneService>();
 
 var app = builder.Build();
 

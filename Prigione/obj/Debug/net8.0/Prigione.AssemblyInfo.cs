@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prigione")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31e7666de365b99a861fd6bda283916c4ad30c0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd56e894ea02349ce1a7f64137e86132e418e431")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prigione")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prigione")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

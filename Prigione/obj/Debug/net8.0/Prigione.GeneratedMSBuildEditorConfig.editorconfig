@@ -24,16 +24,24 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Trasgressori/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhc2dyZXNzb3JpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Verbali/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyYmFsaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Violazioni/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlvbGF6aW9uaVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_ViewImports.cshtml]
