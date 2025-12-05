@@ -1,0 +1,30 @@
+﻿@model IEnumerable<dynamic>
+@{
+    ViewData["Title"] = "Violazioni con Importo > 400€";
+}
+
+<h2>Violazioni con importo > 400€</h2>
+
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Data Violazione</th>
+            <th>Decurtamento Punti</th>
+            <th>Importo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var v in Model)
+        {
+            <tr>
+                <td>@v.Nome</td>
+                <td>@v.Cognome</td>
+                <td>@v.DataViolazione</td>
+                <td>@v.DecurtamentoPunti</td>
+                <td>@v.Importo</td>
+            </tr>
+        }
+    </tbody>
+</table>

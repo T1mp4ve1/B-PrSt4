@@ -44,6 +44,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlvbGF6aW9uaVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1JlcG9ydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_Report/PuntiDecurtatiPerTrasgressore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1JlcG9ydFxQdW50aURlY3VydGF0aVBlclRyYXNncmVzc29yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_Report/VerbaliPerTrasgressore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1JlcG9ydFxWZXJiYWxpUGVyVHJhc2dyZXNzb3JlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_Report/ViolazioniImportoAlto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1JlcG9ydFxWaW9sYXppb25pSW1wb3J0b0FsdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_Report/ViolazioniPuntiSuperiori.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1JlcG9ydFxWaW9sYXppb25pUHVudGlTdXBlcmlvcmkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

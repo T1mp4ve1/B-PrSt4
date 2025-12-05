@@ -1,0 +1,24 @@
+﻿@model IEnumerable<dynamic>
+@{
+    ViewData["Title"] = "Totale Punti Decurtati per Trasgressore";
+}
+
+<h2>Totale punti decurtati per trasgressore</h2>
+
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th>Trasgressore</th>
+            <th>Totale Punti</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Trasgressore</td>
+                <td>@item.TotalePunti</td>
+            </tr>
+        }
+    </tbody>
+</table>
