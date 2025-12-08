@@ -10,28 +10,27 @@
         <div class="d-flex mb-2">
             <div class="me-1">
                 <label>Data Verbale</label>
-                <input type="date" name="DataVerbale" class="form-control" placeholder="DataVerbale..." required />
+                <input type="date" name="DataVerbale" class="win98-input" placeholder="DataVerbale..." required />
             </div>
 
             <div class="me-1">
                 <label>Data Violazione</label>
-                <input type="date" name="DataViolazione" class="form-control" placeholder="DataViolazione..." required />
+                <input type="date" name="DataViolazione" class="win98-input" placeholder="DataViolazione..." required />
             </div>
         </div>
-        
-        
+                
         <div>
-            <input type="text" name="IndirizzoViolazione" class="form-control mb-1 w-50" placeholder="IndirizzoViolazione..." required />
-            <input type="number" name="DecurtamentoPunti" class="form-control mb-1 w-50" placeholder="DecurtamentoPunti..." required />
-            <input type="number" step="0,01" name="Importo" class="form-control mb-1 w-50" placeholder="Importo..." required />
-            <select name="ViolazioneID" class="form-control mb-1 w-50" required>
+            <input type="text" name="IndirizzoViolazione" class="win98-input mb-1 w-50" placeholder="IndirizzoViolazione..." required />
+            <input type="number" name="DecurtamentoPunti" class="win98-input mb-1 w-50" placeholder="DecurtamentoPunti..." required />
+            <input type="number" step="0,01" name="Importo" class="win98-input mb-1 w-50" placeholder="Importo..." required />
+            <select name="ViolazioneID" class="win98-input mb-1 w-50" required>
                 <option value="">-- Violazione --</option>
                 @foreach (var v in ViewBag.Violazioni)
                 {
                     <option value="@v.ViolazioneID">@v.Descrizione</option>
                 }
             </select>
-            <select name="TrasgressoreID" class="form-control w-50" required>
+            <select name="TrasgressoreID" class="win98-input w-50" required>
                 <option value="">-- Trasgressore --</option>
                 @foreach (var t in ViewBag.Trasgressori)
                 {
@@ -42,11 +41,11 @@
         
     </div>
 
-    <button type="submit" class="btn btn-outline-success mt-3">+</button>
+    <button type="submit" class="win98-button mt-3">+</button>
 </form>
 
 <h3 class="mt-5 text-center">Lista verbali (@Model.Count())</h3>
-<table class="table table-striped">
+<table class="table table-striped win98-table">
     <thead>
         <tr>
             <th>Verbale ID</th>
@@ -57,6 +56,7 @@
             <th>Importo</th>
             <th>DataVerbale</th>
             <th>DataViolazione</th>
+            <th>Operazioni</th>
         </tr>
     </thead>
     <tbody>
@@ -71,6 +71,21 @@
                 <td>@v.Importo</td>
                 <td>@v.DataVerbale</td>
                 <td>@v.DataViolazione</td>
+                <td>
+                    <a asp-controller="VerbaleModelTest"
+                       asp-action="Edit"
+                       asp-route-id="@v.VerbaleID"
+                       class="win98-button me-2">
+                        Modifica
+                    </a>
+                    <form asp-controller="VerbaleModelTest"
+                          asp-action="Delete"
+                          asp-route-id="@v.VerbaleID"
+                          method="post"
+                          onsubmit="return confirm('Eliminare?')">
+                        <button type="submit" class="win98-button-error">Elimina</button>
+                    </form>
+                </td>
             </tr>
         }
     </tbody>

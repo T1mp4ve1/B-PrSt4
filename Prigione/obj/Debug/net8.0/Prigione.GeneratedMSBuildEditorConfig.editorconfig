@@ -32,24 +32,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Trasgressori/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhc2dyZXNzb3JpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Trasgressori/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhc2dyZXNzb3JpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/VerbaleModelTest/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyYmFsZU1vZGVsVGVzdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/VerbaleModelTest/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyYmFsZU1vZGVsVGVzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Violazioni/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlvbGF6aW9uaVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_Report/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1JlcG9ydFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_Report/PuntiDecurtatiPerTrasgressore.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1JlcG9ydFxQdW50aURlY3VydGF0aVBlclRyYXNncmVzc29yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_Report/TestDiversi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1JlcG9ydFxUZXN0RGl2ZXJzaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_Report/VerbaliPerTrasgressore.cshtml]
@@ -75,3 +79,11 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-etfwelriam
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/Violazioni/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlvbGF6aW9uaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-duaffkvhzk
+
+[C:/Users/Pavel/Desktop/Corsi/Back/PrSt/B-PrSt4/Prigione/Views/_Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1JlcG9ydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-7ichwf2wy8

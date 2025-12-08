@@ -12,6 +12,7 @@ namespace Prigione.Controllers
             _service = service;
         }
         //CREATE
+
         [HttpPost]
         public async Task<IActionResult> Create(TrasgressoreModel trasgressore)
         {
@@ -29,6 +30,30 @@ namespace Prigione.Controllers
         {
             var trasgressori = await _service.GetAllAsync();
             return View(trasgressori);
+        }
+
+        //UPDATE
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            var trasgressore = await _service.GetByIdAsync(id);
+            return View(trasgressore);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(TrasgressoreModel trasgressore)
+        {
+            await _service.UpdateAsync(trasgressore);
+            return RedirectToAction(nameof(Index));
+        }
+
+        //DELETE
+        [HttpPost]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            await _service.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

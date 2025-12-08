@@ -37,5 +37,32 @@ namespace Prigione.Controllers
             ViewBag.Violazioni = violazioni;
             return View(verbali);
         }
+
+        //UPDATE
+        [HttpGet]
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            var verbale = await _service.GetByIdAsync(id);
+            var violazioni = await _violazione.GetAllAsync();
+            var trasgressori = await _trasgressore.GetAllAsync();
+            ViewBag.Trasgressori = trasgressori;
+            ViewBag.Violazioni = violazioni;
+            return View(verbale);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(VerbaleModelTest verbale)
+        {
+            await _service.UpdateAsync(verbale);
+            return RedirectToAction(nameof(Index));
+        }
+
+        //DELETE
+        [HttpPost]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            await _service.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

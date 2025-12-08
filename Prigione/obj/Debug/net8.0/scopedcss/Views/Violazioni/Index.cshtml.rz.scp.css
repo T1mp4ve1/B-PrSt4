@@ -1,0 +1,44 @@
+/* ---------- MODALE WINDOWS 98 ---------- */
+
+.win98-modal[b-duaffkvhzk] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.win98-window[b-duaffkvhzk] {
+    width: 350px;
+    background: #C0C0C0;
+    border: 2px solid #fff;
+    border-right-color: #7d7d7d;
+    border-bottom-color: #7d7d7d;
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+}
+
+.win98-window-title[b-duaffkvhzk] {
+    background: #000080;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+.win98-window-content[b-duaffkvhzk] {
+    padding: 10px;
+}
+
+.win98-window-buttons[b-duaffkvhzk] {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Bottoni già definiti in precedenza */

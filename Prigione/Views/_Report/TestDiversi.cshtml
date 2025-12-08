@@ -1,0 +1,43 @@
+﻿@model List<VerbaleModelTest>
+@{
+    ViewData["Title"] = "Alcuni Test";
+}
+
+
+<h2 class="mt-3">@ViewData["Title"]</h2>
+<hr />
+<div class="card p-3 mb-1">
+    <h3>Average</h3>
+    <p>@ViewBag.Media</p>
+</div>
+
+<div class="card p-3 mb-1">
+    <h3>OrderBy</h3>
+    @foreach (var a in Model)
+    {
+        <p>@a.DecurtamentoPunti</p>
+    }
+</div>
+
+<div class="card p-3 mb-1">
+<h3>Count</h3>
+<p>@ViewBag.Count</p>
+</div>
+
+<div class="card p-3 mb-1">
+<h3>FirstOrDefault</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Verbale ID</th>
+            <th>DataVerbale</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@ViewBag.FirstOrDefault.VerbaleID</td>
+            <td>@ViewBag.FirstOrDefault.DataVerbale</td>
+        </tr>
+    </tbody>
+</table>
+</div>

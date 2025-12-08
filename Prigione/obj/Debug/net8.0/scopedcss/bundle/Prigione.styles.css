@@ -47,3 +47,194 @@ button.accept-policy[b-etfwelriam] {
   white-space: nowrap;
   line-height: 60px;
 }
+
+/* ----------------------------- */
+/*   WINDOWS 98 NAVBAR STYLE     */
+/* ----------------------------- */
+
+.navbar-win98[b-etfwelriam] {
+    background: #C0C0C0; /* classic gray */
+    border: 2px solid #fff;
+    border-right-color: #7d7d7d;
+    border-bottom-color: #7d7d7d;
+    padding: 5px;
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+    .navbar-win98 .win98-title[b-etfwelriam] {
+        font-weight: bold;
+        padding: 3px 6px;
+        background: #000080; /* Windows 98 Title Bar Blue */
+        color: white;
+        border: 2px solid #fff;
+        border-right-color: #000;
+        border-bottom-color: #000;
+        font-size: 14px;
+    }
+
+.win98-menu[b-etfwelriam] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+    .win98-menu li a[b-etfwelriam] {
+        text-decoration: none;
+        color: black;
+        padding: 3px 8px;
+        border: 2px solid transparent;
+        font-size: 14px;
+    }
+
+        .win98-menu li a:hover[b-etfwelriam] {
+            background: #000080;
+            color: white;
+            border: 2px solid #fff;
+            border-right-color: #000;
+            border-bottom-color: #000;
+        }
+/* _content/Prigione/Views/Violazioni/Index.cshtml.rz.scp.css */
+/* ---------- MODALE WINDOWS 98 ---------- */
+
+.win98-modal[b-duaffkvhzk] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.win98-window[b-duaffkvhzk] {
+    width: 350px;
+    background: #C0C0C0;
+    border: 2px solid #fff;
+    border-right-color: #7d7d7d;
+    border-bottom-color: #7d7d7d;
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+}
+
+.win98-window-title[b-duaffkvhzk] {
+    background: #000080;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+.win98-window-content[b-duaffkvhzk] {
+    padding: 10px;
+}
+
+.win98-window-buttons[b-duaffkvhzk] {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Bottoni già definiti in precedenza */
+/* _content/Prigione/Views/_Report/Index.cshtml.rz.scp.css */
+/* ------------------------------- */
+/*        FORM WINDOWS 98          */
+/* ------------------------------- */
+
+.win98-title-section[b-7ichwf2wy8] {
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.win98-form[b-7ichwf2wy8] {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.win98-input[b-7ichwf2wy8] {
+    width: 250px;
+    padding: 4px;
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+    background: #fff;
+    border: 2px solid #fff;
+    border-right-color: #7d7d7d;
+    border-bottom-color: #7d7d7d;
+}
+
+.win98-button[b-7ichwf2wy8] {
+    padding: 3px 10px;
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+    background: #C0C0C0;
+    border: 2px solid #fff;
+    border-right-color: #7d7d7d;
+    border-bottom-color: #7d7d7d;
+    cursor: pointer;
+}
+
+    .win98-button:hover[b-7ichwf2wy8] {
+        background: #e0e0e0;
+    }
+
+    .win98-button:active[b-7ichwf2wy8] {
+        border: 2px solid #7d7d7d;
+        border-right-color: #fff;
+        border-bottom-color: #fff;
+    }
+
+/* Bottone Elimina stile Win98 rosso */
+.win98-button-error[b-7ichwf2wy8] {
+    padding: 3px 10px;
+    background: #d80000;
+    color: white;
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+    border: 2px solid #fff;
+    border-right-color: #7d0000;
+    border-bottom-color: #7d0000;
+    cursor: pointer;
+}
+
+    .win98-button-error:active[b-7ichwf2wy8] {
+        border: 2px solid #7d0000;
+        border-right-color: #fff;
+        border-bottom-color: #fff;
+    }
+
+
+/* ------------------------------- */
+/* TABLE WINDOWS 98 */
+/* ------------------------------- */
+
+.win98-table[b-7ichwf2wy8] {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "MS Sans Serif", Tahoma, sans-serif;
+}
+
+    .win98-table th[b-7ichwf2wy8] {
+        background: #000080;
+        color: white;
+        padding: 5px;
+        border: 2px solid #000;
+    }
+
+    .win98-table td[b-7ichwf2wy8] {
+        padding: 5px;
+        background: #C0C0C0;
+        border: 2px solid #fff;
+        border-right-color: #7d7d7d;
+        border-bottom-color: #7d7d7d;
+    }
+
+    .win98-table tr:hover td[b-7ichwf2wy8] {
+        background: #dcdcdc;
+    }

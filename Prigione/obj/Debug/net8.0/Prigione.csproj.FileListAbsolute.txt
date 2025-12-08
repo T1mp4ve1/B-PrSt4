@@ -145,3 +145,5 @@ C:\Users\Pavel\Desktop\Corsi\Back\PrSt\B-PrSt4\Prigione\obj\Debug\net8.0\refint\
 C:\Users\Pavel\Desktop\Corsi\Back\PrSt\B-PrSt4\Prigione\obj\Debug\net8.0\Prigione.pdb
 C:\Users\Pavel\Desktop\Corsi\Back\PrSt\B-PrSt4\Prigione\obj\Debug\net8.0\Prigione.genruntimeconfig.cache
 C:\Users\Pavel\Desktop\Corsi\Back\PrSt\B-PrSt4\Prigione\obj\Debug\net8.0\ref\Prigione.dll
+C:\Users\Pavel\Desktop\Corsi\Back\PrSt\B-PrSt4\Prigione\obj\Debug\net8.0\scopedcss\Views\_Report\Index.cshtml.rz.scp.css
+C:\Users\Pavel\Desktop\Corsi\Back\PrSt\B-PrSt4\Prigione\obj\Debug\net8.0\scopedcss\Views\Violazioni\Index.cshtml.rz.scp.css

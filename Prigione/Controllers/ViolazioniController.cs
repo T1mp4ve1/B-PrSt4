@@ -32,5 +32,21 @@ namespace Prigione.Controllers
             var violazioni = await _service.GetAllAsync();
             return View(violazioni);
         }
+
+        //UPDATE
+        [HttpPost]
+        public async Task<IActionResult> Edit(ViolazioneModel violazione)
+        {
+            await _service.UpdateAsync(violazione);
+            return RedirectToAction(nameof(Index));
+        }
+
+        //DELETE
+        [HttpPost]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _service.DeleteAsync(id);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

@@ -18,6 +18,22 @@ namespace Prigione.Controllers
             return View();
         }
 
+        // 0) Tests
+        public async Task<IActionResult> TestDiversi()
+        {
+            ViewBag.Media = await _db.VerbaliTest.AverageAsync(v => v.Importo);
+            ViewBag.Count = await _db.VerbaliTest.CountAsync();
+            ViewBag.FirstOrDefault = await _db.VerbaliTest.FirstOrDefaultAsync();
+
+            var result = await _db.VerbaliTest
+                .Include(v => v.Violazione)
+                .Include(t => t.Trasgressore)
+                .OrderBy(t => t.DecurtamentoPunti)
+                .ToListAsync();
+
+            return View(result);
+        }
+
         // 1) Totale dei verbali per trasgressore
         public async Task<IActionResult> VerbaliPerTrasgressore()
         {
